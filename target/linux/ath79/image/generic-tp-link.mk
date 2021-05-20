@@ -111,6 +111,17 @@ define Device/tplink_archer-c6-v2-us
 endef
 TARGET_DEVICES += tplink_archer-c6-v2-us
 
+define Device/tplink_tl-wa1201-v2
+  $(Device/tplink-safeloader-uimage)
+  SOC := qca9563
+  IMAGE_SIZE := 7808k
+  DEVICE_MODEL := TL-WA1201
+  DEVICE_VARIANT := v2 (EU)
+  TPLINK_BOARD_ID := TL-WA1201-V2
+  DEVICE_PACKAGES := kmod-ath10k-ct ath10k-firmware-qca9888-ct
+endef
+TARGET_DEVICES += tplink_tl-wa1201-v2
+
 define Device/tplink_archer-c60-v1
   $(Device/tplink-safeloader-uimage)
   SOC := qca9561
