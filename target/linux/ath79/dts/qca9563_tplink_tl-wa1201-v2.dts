@@ -74,10 +74,12 @@
 		phy4: ethernet-phy@4 {
 			reg = <4>;
 			device_type = "ethernet-phy";
+
+			eee-broken-100tx;
+			eee-broken-1000t;
 		};
 	};
 };
-
 
 &pcie {
 	status = "okay";
