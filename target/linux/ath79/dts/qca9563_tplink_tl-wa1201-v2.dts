@@ -66,10 +66,11 @@
 	mdio2: mdio {
 		compatible = "virtual,mdio-gpio";
 
-		gpios = <&gpio 3 GPIO_ACTIVE_HIGH>, /* MDC */
-			<&gpio 4 GPIO_ACTIVE_HIGH>; /* MDIO */
 		#address-cells = <1>;
 		#size-cells = <0>;
+
+		gpios = <&gpio 3 GPIO_ACTIVE_HIGH>, /* MDC */
+			<&gpio 4 GPIO_ACTIVE_HIGH>; /* MDIO */
 
 		phy4: ethernet-phy@4 {
 			reg = <4>;

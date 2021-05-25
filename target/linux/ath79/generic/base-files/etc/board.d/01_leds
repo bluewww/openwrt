@@ -20,7 +20,8 @@ glinet,gl-ar300m-lite|\
 glinet,gl-ar300m16|\
 pcs,cap324|\
 tplink,cpe610-v1|\
-tplink,cpe610-v2)
+tplink,cpe610-v2|\
+tplink,tl-wa1201-v2)
 	ucidef_set_led_netdev "lan" "LAN" "green:lan" "eth0"
 	;;
 alfa-network,n2q)
@@ -356,9 +357,6 @@ tplink,tl-wr842n-v2)
 	ucidef_set_led_switch "lan2" "LAN2" "green:lan2" "switch0" "0x08"
 	ucidef_set_led_switch "lan3" "LAN3" "green:lan3" "switch0" "0x10"
 	ucidef_set_led_switch "lan4" "LAN4" "green:lan4" "switch0" "0x02"
-	;;
-tplink,tl-wa1201-v2)
-	ucidef_set_led_netdev "lan" "LAN" "green:lan" "eth0"
 	;;
 trendnet,tew-823dru)
 	ucidef_set_led_netdev "wan" "WAN" "green:planet" "eth0"
